@@ -18,10 +18,10 @@ public class Match {
             while(this.f1.health > 0 && this.f2.health > 0){
                 System.out.println("====YENİ ROUND====");
                 
-                this.f2.health = this.f1.hit(f2);
+                this.f1.health = this.f2.hit(f1);
                 if(isWin()) break;
                 
-                this.f1.health = this.f2.hit(f1);
+                this.f2.health = this.f1.hit(f2);
                 if(isWin()) break;
                 
                 System.out.println(this.f1.name + " Sağlık : " + this.f1.health);
